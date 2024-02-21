@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: #1F6CE0;
+  padding: 30px;
+  font-family: "Irish Grover", system-ui;
+  --background-color: #D9D9D9;
+  --color: #1F6CE0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea, button {
+  font-family: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8.5rem;
+}
+
+header {
+  background-color: var(--background-color);
+  padding: 1rem;
+  text-align: center;
+  color: var(--color);
+  font-size: 1.5rem;
+}
+
+textarea {
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--color);
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+button {
+  background-color: var(--background-color);
+  color: var(--color);
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.get-synonyms-btn {
+  flex-grow: 2;
+}
