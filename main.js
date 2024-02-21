@@ -22,7 +22,7 @@ getSynonymsBtn.addEventListener('click', async () => {
       },
       {
         "role": "user",
-        "content": "Give me 3 synonyms of this word: " + wordText
+        "content": "Give me 3 synonyms of this word, only giving me the synonyms, without numbering or extra explanantion, sepeareted with commas: " + wordText
       }
     ],
     temperature: 1,
@@ -33,4 +33,9 @@ getSynonymsBtn.addEventListener('click', async () => {
   });
 
   synonymsTextarea.value = response.choices[0].message.content
+})
+
+clearBtn.addEventListener('click', () => {
+  wordTextrea.value = ''
+  synonymsTextarea.value = ''
 })
