@@ -6,7 +6,7 @@ const clearBtn = document.getElementById('clear-btn')
 getSynonymsBtn.addEventListener('click', async () => {
   const wordText = wordTextrea.value
 
-  const apiUrl = 'http://localhost:3000/api/synonym'
+  const apiUrl = 'https://my-synonym-generator-backend.onrender.com/api/synonym'
   const options = {
     method: 'POST',
     body: JSON.stringify({
